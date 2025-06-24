@@ -1,0 +1,97 @@
+/* Container */
+.pl-container {
+  font-family: 'Poppins', sans-serif;
+  max-width: 1200px;
+  margin: 2rem auto;
+  background: #e6e4e4;
+  border-radius: 8px;
+  color: #333333;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eaeaea;
+  padding-bottom: 1rem;
+}
+
+/* Header */
+.pl-header {
+  padding: 1.5rem 1.5rem 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.pl-title {
+  font-size: 1.375rem;
+  font-weight: 600;
+  margin: 0;
+  color: #222222;
+}
+
+/* Table */
+.pl-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.pl-table thead th {
+  color: #555;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  padding: 0.875rem 1.25rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #f9f9f9;
+}
+
+.pl-table tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.pl-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.pl-table tbody tr:hover {
+  background-color: #fafafa;
+}
+
+.pl-table td {
+  padding: 1rem 1.25rem;
+  color: #444;
+  vertical-align: middle;
+  background-color: #ffffff;
+}
+
+/* Status Styling */
+.pl-status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.pl-status.pending {
+  background-color: #eab308;
+}
+
+.pl-status.approved {
+  background-color: #22c55e;
+}
+
+.pl-status.rejected {
+  background-color: #ef4444;
+}
+
+/* Messages */
+.pl-message {
+  padding: 1rem;
+  text-align: center;
+  color: #555;
+}
+
+.pl-error {
+  padding: 1rem;
+  text-align: center;
+  color: #ef4444;
+}

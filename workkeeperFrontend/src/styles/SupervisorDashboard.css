@@ -1,0 +1,77 @@
+.dashboard-container {
+  padding: 24px;
+  font-family: sans-serif;
+}
+
+.dashboard-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.dashboard-card {
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+}
+
+.dashboard-card h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.dashboard-card p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.section-grid {
+  display: grid;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .section-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.section-box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-box h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.section-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section-box li {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.alert-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #777;
+}

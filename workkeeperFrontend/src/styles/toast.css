@@ -1,0 +1,181 @@
+/* General Toast Styles */
+.custom-toast {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  min-height: 50px;
+  max-width: 350px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  color: #fff;
+  gap: 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Left section containing icon + message */
+.toast-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 8px;
+  overflow: hidden;
+}
+
+/* Message text */
+.toast-message {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Toast icon (✔️, ❌, ⚠️, ℹ️) */
+.toast-icon {
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+/* Close button */
+.toast-close-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 8px;
+  padding: 0;
+  flex-shrink: 0;
+  width: 34px;
+
+}
+
+/* Success Toast */
+.toast-success {
+  color: #5a8f16;
+}
+
+/* Error Toast */
+.toast-error {
+  background-color: #f44336;
+}
+
+/* Info Toast */
+.toast-info {
+  background-color: #2196f3;
+}
+
+/* Warning Toast */
+.toast-warning {
+  background-color: #ff9800;
+}
+/* Shift Info Section Styles */
+.punch-card h3{
+  margin-bottom: 34px;
+}
+/* Shift Info Section - Fixed Colors */
+.shift-info {
+  background: rgba(30, 41, 59, 0.4);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: grid;
+  gap: 1rem;
+}
+
+.shift-info p {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.shift-info p:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 1rem;
+}
+
+.shift-info strong {
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+/* Fixed color classes */
+.shift-info .shift-type {
+  color: #e2e8f0; /* Default color */
+  font-weight: 400;
+  text-align: right;
+}
+
+.shift-info .shift-type.night {
+  color: #f59e0b; /* Amber for night shift */
+}
+
+.shift-info .shift-type.day {
+  color: #10b981; /* Green for day shift */
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .shift-info {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+  
+  .shift-info p {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+  
+  .shift-info strong {
+    margin-bottom: 0.25rem;
+  }
+  
+  .shift-info .shift-type {
+    text-align: left;
+  }
+}
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .shift-info {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+  
+  .shift-info p {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+  
+  .shift-info strong {
+    margin-bottom: 0.25rem;
+  }
+  
+  .shift-info span {
+    text-align: left;
+  }
+}
+.current-status {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.2rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+}
+
+/* Individual colors for status */
+.status-none {
+  background-color: #f0ad4e; /* Orange */
+}
+
+.status-in {
+  background-color: #28a745; /* Green */
+}
+
+.status-out {
+  background-color: #6c757d; /* Gray */
+}

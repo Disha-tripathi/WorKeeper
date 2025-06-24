@@ -1,0 +1,216 @@
+body{
+    /* background-color: aqua; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.dashboard-wrapper{
+    display: flex;
+}
+.main-content{
+    /* background-color: antiquewhite; */
+    /* margin-left: 300px;
+    padding: 2rem; */
+    width: 90%;
+    border: 1px solid #0c0c0c;
+    padding: 23px;
+    
+}
+.nav-link {
+    text-decoration: none;
+}
+.nav-link:hover {
+    color: #b18aff;
+}
+
+  
+  /* Header background color */
+.react-calendar__navigation {
+    display: flex;
+    height: 33px;
+    background-color: #f4f4fa; /* Panel background */
+    color: #1d1b05; /* Accent color */
+    border: 1px solid #d8aaaa;
+    font-size: 2em;
+    
+}
+.react-calendar__navigation button{
+    min-width: 44px;
+}
+.react-calendar__month-view__weekdays {
+    text-align: center;
+    text-transform: uppercase;
+    font: inherit;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  /* Day cells with dark background and text color */
+  .react-calendar__tile {
+    background-color: #efeff0; /* Dark background for days */
+    color: #491288;
+    border-radius: 7px;
+    padding: 29px;
+    /* height: 40vh; */
+    font-weight: 700;
+    font-size: 1em;
+    /* border: 1px solid #0c0b53; */
+    
+  }
+  
+  /* Hover effect */
+  .react-calendar__tile--active {
+    background-color: #7f5af0; /* Bright purple for active day */
+    color: #fff;
+    border: 1px solid #205899;
+
+  }
+  
+  /* Today’s date */
+  .react-calendar__tile--now {
+    background-color: #1e0861;
+    color: white;
+  }
+
+  .attendance-present {
+    background: #187c04 ; /* Green */
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .attendance-absent {
+    background: #9A0000; /* Red */
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .attendance-holiday {
+    background: #e5ff00 ; /* Orange */
+    color: rgb(8, 8, 8);
+    border-radius: 10px;
+  }
+  
+  .attendance-weekend {
+    background: #9e9e9e ; /* Gray */
+    color: white;
+    border-radius: 10px;
+  }
+  .legend-box {
+    display: flex;
+    gap: 1rem;
+    margin: 10px 0;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .legend-box span {
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+    color: #f1f1f1;
+  }
+  
+  .legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    margin-right: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .legend-color.present {
+    background-color: green;
+  }
+  .legend-color.absent {
+    background-color: darkred;
+  }
+  .legend-color.holiday {
+    background-color: yellow;
+  }
+  .legend-color.weekend {
+    background-color: gray;
+  }
+  .react-calendar__tile.present {
+    background: #4caf50 !important; /* green */
+    color: white;
+  }
+  .react-calendar__tile.absent {
+    background: #f44336 !important; /* red */
+    color: white;
+  }
+  .react-calendar__tile.holiday {
+    background: #ff9800 !important; /* orange */
+    color: white;
+  }
+  .react-calendar__tile.weekend {
+    background: #607d8b !important; /* gray-blue */
+    color: white;
+  }
+  .present {
+    background-color: #4caf50; /* Green */
+    color: white;
+  }
+  
+  .absent {
+    background-color: #f44336; /* Red */
+    color: white;
+  }
+  
+  .holiday {
+    background-color: #ff9800; /* Orange */
+    color: white;
+  }
+  
+  .weekend {
+    background-color: #2196f3; /* Blue */
+    color: white;
+  }
+  .legend {
+    color: white;
+    font-size: 14px;
+  }
+  
+  .legend-items {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
+  
+  .legend-box {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    border-radius: 3px;
+  }
+  
+  .legend-box.present {
+    background-color: green;
+  }
+  .legend-box.absent {
+    background-color: red;
+  }
+  .legend-box.holiday {
+    background-color: blue;
+  }
+  .legend-box.weekend {
+    background-color: yellow;
+  }
+  
+  .daily-details {
+    max-width: 400px;
+    background: #1f2937;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+  }
+  
+  .close-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+    
+  

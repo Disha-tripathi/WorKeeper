@@ -1,0 +1,249 @@
+/* WorkKeeper Registration Styles */
+.wk-register-container {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #f5f7fa;
+}
+
+.wk-register-card {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.wk-register-form-wrapper {
+  flex: 1;
+  padding: 3rem;
+}
+
+.wk-register-title {
+  color: #1a1a2e;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.wk-register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.wk-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.wk-form-label {
+  font-weight: 500;
+  color: #1a1a2e;
+  font-size: 0.9rem;
+}
+
+.wk-form-input,
+.wk-form-select,
+.wk-form-textarea {
+  padding: 0.8rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.wk-form-input:focus,
+.wk-form-select:focus,
+.wk-form-textarea:focus {
+  border-color: #4361ee;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+}
+
+.wk-password-wrapper {
+  position: relative;
+}
+
+.wk-password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #4361ee;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.wk-employee-fields {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background-color: rgba(67, 97, 238, 0.05);
+  border-radius: 8px;
+  border-left: 3px solid #4361ee;
+  animation: wk-fadeIn 0.3s ease-out;
+}
+
+@keyframes wk-fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.wk-form-error {
+  color: #f72585;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+.wk-register-btn {
+  background: #4361ee;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.wk-register-btn:hover {
+  background: #3a56d4;
+  transform: translateY(-2px);
+}
+
+.wk-register-btn:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.wk-login-link {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #64748b;
+}
+
+.wk-login-link-text {
+  color: #4361ee;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.wk-login-link-text:hover {
+  text-decoration: underline;
+}
+
+.wk-register-graphic {
+  flex: 1;
+  background: linear-gradient(135deg, #4361ee, #3f37c9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.wk-graphic-circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  position: absolute;
+}
+
+.wk-graphic-circle:nth-child(1) {
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+}
+
+.wk-graphic-circle:nth-child(2) {
+  bottom: -80px;
+  left: -80px;
+  width: 300px;
+  height: 300px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .wk-register-card {
+    flex-direction: column;
+  }
+  
+  .wk-register-graphic {
+    display: none;
+  }
+  
+  .wk-register-form-wrapper {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wk-register-container {
+    padding: 1rem;
+  }
+  
+  .wk-register-form-wrapper {
+    padding: 1.5rem;
+  }
+}
+/* API Response Styles */
+.wk-api-response {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.wk-api-response-title {
+  color: #4361ee;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.wk-api-response-json {
+  background-color: #1a1a2e;
+  color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-height: 300px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .wk-api-response {
+    padding: 1rem;
+  }
+  
+  .wk-api-response-json {
+    font-size: 0.8rem;
+  }
+}
+.wk-form-select option {
+  font-family: 'poppins';
+}

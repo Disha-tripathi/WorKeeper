@@ -1,0 +1,215 @@
+LeaveCards.css
+.leave-management-container {
+  font-family: "Poppins",sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.leave-management-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2.5rem;
+}
+
+.header-content {
+  flex: 1;
+}
+
+.leave-management-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.leave-management-subtitle {
+  font-size: 1rem;
+  color: #718096;
+  margin: 0.5rem 0 0;
+}
+
+.request-leave-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(66, 153, 225, 0.3);
+  transition: all 0.2s ease;
+}
+
+.request-leave-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(66, 153, 225, 0.3);
+}
+
+.button-icon {
+  font-size: 1.2rem;
+}
+
+.leave-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.leave-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+  border: 0.5px solid rgba(104, 103, 103, 0.2)
+}
+
+.leave-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.leave-card.overused {
+  border-left: 4px solid #e53e3e;
+}
+
+.leave-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leave-chart-container {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin-bottom: 1.5rem;
+}
+
+.leave-count {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.leave-count span {
+  font-size: 2.5rem;
+  font-weight: 700;
+  /* color: #2d3748; */
+  display: block;
+  line-height: 1;
+}
+
+.leave-count small {
+  font-size: 0.875rem;
+  color: #718096;
+  font-weight: 500;
+}
+
+.leave-info {
+  text-align: center;
+  width: 100%;
+}
+
+.leave-type {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0 0 1rem;
+}
+
+.leave-stats {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: #718096;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.remaining-stat .stat-value {
+  color: #4CAF50;
+}
+
+.taken-stat .stat-value {
+  color: #F44336;
+}
+
+.leave-overused-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #fff5f5;
+  color: #e53e3e;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.empty-leave {
+  background-color: #F8FAFC;
+  border: 1px dashed #CBD5E0;
+}
+
+.empty-leave .leave-count span {
+  color: #718096;
+}
+
+.empty-leave .leave-count small {
+  color: #A0AEC0;
+}
+
+.empty-leave .leave-type {
+  color: #718096;
+}
+
+.empty-leave-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #EBF8FF;
+  color: #3182CE;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .leave-management-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .leave-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "KEtt7C499tJ2U8zFNlAdRBObEHJTsu4NG+QSH6pWDrE=",
+  "Source": "workkeeperApi",
+  "BasePath": "_content/workkeeperApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
